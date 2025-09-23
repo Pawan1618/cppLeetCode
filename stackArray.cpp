@@ -25,8 +25,10 @@ public:
 
     // Push element onto stack
     void push(int x) {
+        // case 1 if stack is full
         if (isFull()) {
             cout << "Stack Overflow! Cannot push " << x << endl;
+            // else not full
         } else {
             arr[++top] = x;
             cout << x << " pushed to stack" << endl;
